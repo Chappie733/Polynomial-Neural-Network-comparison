@@ -48,7 +48,7 @@ class PolLayer:
 		self.exps = np.array([[r(3) for _ in range(self.n_neurons)] for n in range(next_layer.n_neurons)], dtype=self.dtype)
 
 	def feed(self, prev):
-		if isinstance(prev, ExpLayer):
+		if isinstance(prev, PolLayer):
 			for i in range(self.n_neurons):
 				self.neurons[i] = prev.activation(i, bias=self.biases[i])
 		else:

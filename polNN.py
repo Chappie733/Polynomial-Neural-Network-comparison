@@ -1,5 +1,5 @@
 import numpy as np
-from expLayer import *
+from PolLayer import *
 
 class PolynomialNeuralNetwork:
 

@@ -30,7 +30,7 @@ class Layer:
 		else:
 			try:
 				if prev.shape != self.neurons.shape:
-					raise Exception("Expected data of shape " + str(self.neurons.shape) + " but received data with shape " + str(prev.data))
+					raise Exception("Expected data of shape " + str(self.neurons.shape) + " but received data with shape " + str(prev.shape))
 				self.neurons = prev
 			except AttributeError:
 				raise Exception("the \"feed\" function only allows Layer objects or numpy arrays as parameters!")

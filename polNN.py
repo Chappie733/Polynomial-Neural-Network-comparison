@@ -17,7 +17,7 @@ class PolynomialNeuralNetwork:
 			predicted = self.predict(x)
 			cost = self.get_cost(predicted, y)
 			if c != 0:
-				self.lr -= self.lr/(c*epoch)
+				self.lr -= self.lr/(c*epoch) # this isn't explained in the document... 
 			loss.append(cost)
 			print("Epoch: " + str(epoch) + ", cost: " + str(cost))
 

@@ -86,7 +86,7 @@ class PolynomialNeuralNetwork:
 		return self.layers[-1].neurons
 
 	def add_layer(self, layer):
-		self.layers[-2].log(layer)
+		self.layers[-1].log(layer)
 		self.layers.append(layer)
 
 	def __str__(self):

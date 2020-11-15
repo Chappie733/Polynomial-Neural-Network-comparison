@@ -23,7 +23,7 @@ epochs = 500
 
 for i in range(1, gen+1):
 	model = PolynomialNeuralNetwork([PolLayer(3), PolLayer(3)], lr=0.1)
-	loss = model.fit(x,y, epochs=epochs, c=0)
+	loss = model.fit(x,y, epochs=epochs, c=3)
 
 	plt.plot([i for i in range(1,epochs+1)], loss, color='black')
 	plt.xlabel('Epoch')

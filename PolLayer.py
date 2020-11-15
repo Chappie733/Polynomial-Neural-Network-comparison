@@ -14,7 +14,6 @@ def norm(x):
 	return 1 if x>= 0 else -1
 
 def np_pow(a, b):
-	#return np.sign(a) * (np.abs(a)) ** ((n*10**gd(n))%(10**gd(n)))
 	return np.sign(a) * (np.abs(a) ** b)
 
 # 1 -> bias
